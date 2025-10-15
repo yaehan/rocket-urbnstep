@@ -334,9 +334,9 @@ h3 {
   .sale-img {
     display: flex;
     gap: 24px;
-    position: relative;
     .sale-item {
       max-width: 306px;
+      position: relative;
     }
   }
   .sale-item:hover img {
@@ -492,6 +492,7 @@ h3 {
   .imgbox-1 {
     display: grid;
     grid-template-rows: repeat(1fr, 2fr);
+    gap: 8px;
   }
   .imgbox-2 {
     display: grid;
@@ -502,6 +503,7 @@ h3 {
   .imgbox-3-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
   .imgbox-3 {
     display: grid;
@@ -597,10 +599,10 @@ h3 {
 }
 .footer .list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin-top: 64px;
+  margin-top: 40px;
   margin-bottom: 24px;
   img {
     max-width: auto;
@@ -657,6 +659,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-weight: 500;
     a {
       text-decoration: none;
       color: inherit;
@@ -702,6 +705,9 @@ h3 {
     }
   }
   /* sale */
+  .sale {
+    margin-left: 24px;
+  }
   .sale-img {
     display: flex;
     flex-wrap: nowrap;
@@ -769,6 +775,7 @@ h3 {
   }
   /* outfit */
   .outfit {
+    padding: 0 12px;
     .block {
       overflow: scroll;
       img {
@@ -796,9 +803,15 @@ h3 {
   .list {
     display: flex;
     flex-direction: column;
-
+    gap: 8px;
     .footer-list {
       flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 12px;
+    }
+    a {
+      width: 100%;
     }
   }
 }
